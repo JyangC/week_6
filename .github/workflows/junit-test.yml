@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: 
+        uses: action-jdk-sbt-cache
       - name: Set up JDK 21
-        uses: 
+        uses: setup-java
         with: 
           distribution: 'oracle'
           java-version: '21'
